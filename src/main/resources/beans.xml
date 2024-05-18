@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+	
+	<bean id="swift" class="com.tap.SetterInj.Impl.swift">
+		<property name="model" value="Swift car"></property>
+		<property name="i" ref="i1"></property>
+	</bean>
+	
+	<bean id="polo" class="com.tap.SetterInj.Impl.polo">
+		<property name="model" value="Polo car"></property>
+		<property name="i" ref="i2"></property>
+	</bean>
+	
+	<bean id="i1" class="com.tap.SetterInj.classes.Infotainment">
+		<property name="brand" value="JBL"></property>
+		
+	</bean>
+	
+	<bean id="i2" class="com.tap.SetterInj.classes.Infotainment">
+		<property name="brand" value="Sony"></property>
+		
+	</bean>
+	
+	
+</beans>
